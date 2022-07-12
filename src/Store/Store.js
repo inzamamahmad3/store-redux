@@ -1,7 +1,1 @@
-import { configureStore } from "@reduxjs/toolkit/dist/configureStore";
-
-const store =  configureStore({
-    reducer:{
-        // cart : 
-    }
-})
+// import {compose, crea} from "redux"
