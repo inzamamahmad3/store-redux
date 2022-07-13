@@ -3,16 +3,10 @@ body{
 }
 .container{
     display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-    position: relative;
+    height: 200%;
+    width: 100%;    
+    justify-content: center;
+    flex-direction: column-reverse;
     align-items: center;
     align-items: center;
-    border: solid 1px;
-}
-.dev{
-    background-color: blue;
-    border: 1px solid;
 }

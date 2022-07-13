@@ -1,29 +1,24 @@
 
 import "./home.styles.css"
 import { useState } from "react"
+import { useSelector } from "react-redux"
 import {Link} from "react-router-dom"
 
 import React from 'react'
 
-function Home() {
- const [value , setValue] = useState(0)
-
- const inc = ()=>{
-    setValue(value + 1)
- }
- const dec = ()=>{
-    setValue(value - 1)
- }
+function CounterRedux() {
+ const add = useSelector()
+  
   return (<div className="container">
    
     <div className="dev" >
-        <button onClick={inc}>
+        <button >
             +
         </button>
         <h1>
-            {value}
+            
         </h1>
-        <button onClick={dec}>
+        <button >
             -
         </button>
         <Link to={"/check"}> CheckOut Page</Link>
@@ -34,4 +29,4 @@ function Home() {
   )
 }
 
-export default Home
+export default CounterRedux
